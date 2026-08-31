@@ -420,6 +420,7 @@
     display:flex; align-items:center; justify-content:center; font-size:20px; padding-left:4px;
   }
   .video-slot-label{ font-family:var(--font-mono); font-size:13px; color:var(--ink-soft); }
+  .video-caption{ font-family:var(--font-mono); font-size:12px; color:var(--ink-soft); margin-top:14px; text-align:center; }
 
   /* ============ STICKY WHATSAPP ============ */
   .float-wa{
@@ -543,28 +544,34 @@
 <section id="watch">
   <div class="container">
     <div class="section-head reveal">
-      <h2>Watch it explained in 3 minutes</h2>
-      <p class="desc">A short walkthrough in Hindi — what an AI helper does, and how a build with us actually works.</p>
+      <h2>Watch a preview</h2>
+      <p class="desc">A first look from the storyboard. The full walkthrough, in Hindi, is still being finished.</p>
     </div>
     <!--
-      VIDEO EMBED SLOT
-      No video exists yet — this is a placeholder, not a broken/fake embed.
-      Once you have a real YouTube video, replace the .video-slot div below with:
-
+      VIDEO EMBED SLOT — self-hosted preview clip (10s storyboard scene, silent-safe with controls).
+      Swap for the full explainer once it's ready: same <video> tag, new src/poster, update heading above.
+      For a YouTube embed instead, use:
       <div class="video-slot" style="border:none; padding:0;">
         <iframe width="100%" height="100%" style="aspect-ratio:16/9; display:block;"
-          src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID"
-          title="Airamu — how it works" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          src="https://www.youtube-nocookie.com/embed/YOUR_VIDEO_ID" title="Airamu — how it works"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen loading="lazy"></iframe>
       </div>
     -->
-    <a class="video-slot reveal" href="https://wa.me/918240801921?text=Hi%20Airamu%2C%20is%20the%20explainer%20video%20ready%20yet%3F" target="_blank" rel="noopener">
-      <div class="video-slot-inner">
-        <div class="play-btn" aria-hidden="true">▶</div>
-        <p class="video-slot-label">Video coming soon — tap to ask us for one</p>
-      </div>
-    </a>
+    <div class="video-slot reveal" style="border:none; padding:0; cursor:default;">
+      <video
+        class="video-el"
+        controls
+        playsinline
+        preload="metadata"
+        poster="/assets/video/explainer-poster.jpg"
+        style="width:100%; height:100%; display:block; border-radius:2px; background:#000;">
+        <source src="/assets/video/explainer-preview.mp4" type="video/mp4">
+        Your browser doesn't support embedded video —
+        <a href="/assets/video/explainer-preview.mp4">download the preview clip</a> instead.
+      </video>
+    </div>
+    <p class="video-caption">This is a 10-second preview clip, not the full explainer — the complete Hindi walkthrough is in progress.</p>
   </div>
 </section>
 
