@@ -40,15 +40,7 @@
   "name": "Airamu",
   "description": "AI agent studio building production retrieval, conversation, and operations agents for SMEs and founder-led businesses.",
   "url": "https://airamu.com/",
-  "areaServed": "IN",
-  "priceRange": "₹₹",
-  "makesOffer": {
-    "@type": "Offer",
-    "name": "RAG Chatbot Build",
-    "price": "75000",
-    "priceCurrency": "INR",
-    "description": "A retrieval-augmented AI chatbot connected to your documents or product data, deployed live in your product within 10 days."
-  }
+  "areaServed": "IN"
 }
 </script>
 
@@ -365,26 +357,6 @@
   .pipe-step p{ font-size:13.5px; color:var(--ink-soft); margin-top:10px; }
   .pipe-arrow{ display:flex; align-items:center; padding:0 6px; color:var(--ink-soft); font-family:var(--font-mono); flex:0 0 auto; }
 
-  /* ============ OFFER ============ */
-  .offer{
-    border:1px solid var(--line-strong); background:var(--paper-raised);
-    display:grid; grid-template-columns:1.3fr 1fr;
-  }
-  @media (max-width:820px){ .offer{ grid-template-columns:1fr; } }
-  .offer-main{ padding:clamp(24px,4vw,44px); }
-  .offer-side{ padding:clamp(24px,4vw,44px); background:var(--paper-deep); border-left:1px solid var(--line); display:flex; flex-direction:column; justify-content:space-between; }
-  @media (max-width:820px){ .offer-side{ border-left:none; border-top:1px solid var(--line); } }
-  .offer-main .eyebrow{ margin-bottom:16px; }
-  .offer-main h3{ font-size:32px; }
-  .offer-main .desc{ color:var(--ink-soft); margin-top:14px; max-width:48ch; font-size:15px; }
-  .offer-list{ list-style:none; margin:26px 0 0; padding:0; display:grid; gap:11px; }
-  .offer-list li{ font-size:14.5px; padding-left:20px; position:relative; }
-  .offer-list li::before{ content:"—"; position:absolute; left:0; color:var(--copper); font-family:var(--font-mono); }
-  .price{ font-family:var(--font-mono); }
-  .price .amt{ font-size:40px; color:var(--copper); font-weight:600; }
-  .price .unit{ font-size:13px; color:var(--ink-soft); display:block; margin-top:4px; }
-  .offer-side .note{ font-size:12.5px; color:var(--ink-soft); margin-top:22px; font-family:var(--font-mono); line-height:1.7; }
-
   /* ============ FOUNDER STRIP ============ */
   .founder{ display:flex; gap:36px; align-items:flex-start; flex-wrap:wrap; }
   .founder .mark{
@@ -459,7 +431,7 @@
     <nav class="links">
       <a href="#what">What we do</a>
       <a href="#watch">Watch</a>
-      <a href="#offer">Pricing</a>
+      <a href="#work">How it works</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn-primary" href="https://wa.me/918240801921?text=Hi%20Airamu%2C%20I%20want%20to%20know%20more." target="_blank" rel="noopener">Message us</a>
@@ -477,7 +449,7 @@
       <p class="lede load-in d3">We build a simple AI helper for your business. It replies to customers, takes orders, and answers questions — day or night. You just tell us what you want it to do.</p>
       <div class="hero-cta load-in d4">
         <a class="btn btn-primary" href="https://wa.me/918240801921?text=Hi%20Airamu%2C%20I%20want%20to%20know%20more%20about%20getting%20an%20AI%20helper%20for%20my%20business." target="_blank" rel="noopener">💬 Message us on WhatsApp</a>
-        <a class="btn btn-ghost" href="#offer" style="border:1px solid var(--line-strong);">See pricing</a>
+        <a class="btn btn-ghost" href="#what" style="border:1px solid var(--line-strong);">See what it does</a>
       </div>
       <div class="hero-meta load-in d5">
         <div><div class="num">10 days</div><div class="lbl">Ready &amp; working</div></div>
@@ -715,38 +687,6 @@
         <div class="stage">Stage 04</div>
         <h4>Log or escalate</h4>
         <p>Low-confidence or high-stakes actions route to a human. Everything else writes a plain-English audit trail.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="offer">
-  <div class="container">
-    <div class="section-head reveal">
-      <h2>The fastest way to see this working in your product</h2>
-      <p class="desc">A fixed-scope entry point. No discovery calls, no open-ended retainer — a working agent, live, in ten days.</p>
-    </div>
-    <div class="offer reveal">
-      <div class="offer-main">
-        <p class="eyebrow">FEATURED BUILD</p>
-        <h3>RAG chatbot, live in your product</h3>
-        <p class="desc">We connect an agent to your documentation, knowledge base, or product data. It answers customer and internal questions in plain language, with the source cited — deployed directly inside your existing stack.</p>
-        <ul class="offer-list">
-          <li>Works with your stack — Next.js, Node, Python, Mongo, or Postgres</li>
-          <li>Answers grounded in your data, every response cited</li>
-          <li>Fully async delivery — a recorded walkthrough plus email, no meetings required</li>
-          <li>Fixed scope, fixed price — if it isn't live in 10 days, the balance isn't due</li>
-        </ul>
-      </div>
-      <div class="offer-side">
-        <div>
-          <div class="price">
-            <span class="amt">₹75,000</span>
-            <span class="unit">fixed · 10-day delivery</span>
-          </div>
-          <a class="btn btn-primary" href="https://wa.me/918240801921?text=Hi%20Airamu%2C%20I%27d%20like%20to%20book%20the%20%E2%82%B975%2C000%20RAG%20chatbot%20build." target="_blank" rel="noopener" style="display:block; text-align:center; margin-top:26px;">Book this build on WhatsApp</a>
-        </div>
-        <p class="note">50% to start, balance on delivery.<br>Two build slots open per month.<br>Larger or ongoing work scoped after a short async brief.</p>
       </div>
     </div>
   </div>
